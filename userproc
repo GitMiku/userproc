@@ -1,0 +1,28 @@
+if [ $# -eq 0 ]
+then
+        echo -e "This program output's a user's last 5 bash commands and their cu$
+        exit
+else
+        clear
+        while
+        true
+        do
+        echo -e "\033[1m$1 processes\n===========================================$
+        ps -u  $1
+        echo -e "\033[1m\n$1's last 5 bash commands\n============================$
+        cat /home/$1/.bash_history | tail -5
+
+
+
+#echo -e "
+#Group $fname's processes
+#"
+#ps -g $fname -a
+        sleep 5
+        clear
+        done
+
+fi
+
+
+
