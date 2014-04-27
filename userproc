@@ -1,15 +1,15 @@
 if [ $# -eq 0 ]
 then
-        echo -e "This program output's a user's last 5 bash commands and their cu$
+        echo -e "This program output's a user's last 5 bash commands and their current running processes\nUSAGE: $0 [username]"
         exit
 else
         clear
         while
         true
         do
-        echo -e "\033[1m$1 processes\n===========================================$
+        echo -e "\033[1m$1 processes\n======================================================\n\033[0m"
         ps -u  $1
-        echo -e "\033[1m\n$1's last 5 bash commands\n============================$
+        echo -e "\033[1m\n$1's last 5 bash commands\n======================================================\033[0m"
         cat /home/$1/.bash_history | tail -5
 
 
@@ -23,6 +23,7 @@ else
         done
 
 fi
+
 
 
 
