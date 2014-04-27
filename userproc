@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ $# -eq 0 ]
 then
         echo -e "This program output's a user's last 5 bash commands and their current running processes\nUSAGE: $0 [username]"
