@@ -11,13 +11,6 @@ else
         ps -u  $1
         echo -e "\033[1m\n$1's last 5 bash commands\n======================================================\033[0m"
         cat /home/$1/.bash_history | tail -5
-
-
-
-#echo -e "
-#Group $fname's processes
-#"
-#ps -g $fname -a
         sleep 5
         clear
         done
